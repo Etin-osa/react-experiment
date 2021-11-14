@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Header from '../components/Header/Header';
 import Validation from '../components/Validation/Validation';
 import Charlist from '../components/Charlist/Charlist';
+import Classroom from '../components/Classroom/Classroom';
 import './App.css';
 
 
@@ -45,6 +46,8 @@ function App() {
         userSplit={userSplit}
         clicked={deleteCharHandler}
       />
+
+      <Classroom />
     </div>
   );
 }

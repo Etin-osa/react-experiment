@@ -18,8 +18,9 @@ const Charlist = props => {
       <input
         type="text"
         onChange={props.changed}
-        value={props.userInput} />
-
+        value={props.userInput} 
+      />
+      
       <div>
         {each}
       </div>   
