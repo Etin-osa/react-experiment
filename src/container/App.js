@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import Header from '../components/Header/Header';
-import Validation from '../components/Validation/Validation';
 import Charlist from '../components/Charlist/Charlist';
 import Classroom from '../components/Classroom/Classroom';
+import Header from '../components/Header/Header';
+import Validation from '../components/Validation/Validation';
 import './App.css';
 
 
@@ -47,7 +47,10 @@ function App() {
         clicked={deleteCharHandler}
       />
 
-      <Classroom />
+      <Classroom>
+        <h1>Let me make something clear to you all</h1>
+        <p>Ha hahaha!!</p>
+      </Classroom>
     </div>
   );
 }
