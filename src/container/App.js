@@ -1,6 +1,5 @@
 import React from 'react';
-// import Classed from '../components/Classed/Classed';
-import Func from '../components/Func/Func';
+import Hooks from '../components/Hooks/Hooks'
 import './App.css';
 
 
@@ -8,7 +7,7 @@ function App() {
 
   return (
     <div className="App">
-      <Func />
+      <Hooks />
     </div>
   );
 }

@@ -1,0 +1,42 @@
+
+
+useReducer
+This hook is similar to useState the major difference is that useReducer is more advisable for mulitple states.
+const [state-property, like-setState-in-useState] = useReducer(some-function, properties-in-state)
+const [state, dispatch] = useReducer(reducer, { count: 0, something: true })
+
+The reducer is a function(that can be named anything) that set cases for when to change each or multiple properties of the state
+function reducer(state, action) {
+  switch (action.type) {
+    case "Inc":
+      return { count: state.count + 1, showText: state.showText }
+    case "Dec":
+      return { count: state.count, showText: !state.showText }
+    default:
+      return state
+  }
+}
+
+To change the state maybe in something like a button click we use the dispatch button to set the action type we need for that button
+<button
+  onClick={() => {
+    dispatch({ type: "Inc" })
+    dispatch({ type: "Dec" })
+  }}
+>Click Me</button>
+
+
+
+Full Code
+<div>
+  <h1>{ state.count }</h1>
+  <button
+    onClick={() => {
+      dispatch({ type: "Inc" })
+      dispatch({ type: "Dec" })
+    }}
+  >Click Me</button>
+  { state.showText && <div>This is only visible in showText</div>}
+</div>
+
+*/
